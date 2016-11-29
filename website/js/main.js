@@ -1,12 +1,14 @@
 var form = document.querySelector('form');
 
+var DOMAIN = window.location.hostname.split(".").slice(-3).join(".");
+
 form.addEventListener('submit', function(e) {
 	e.preventDefault();
 
 	var message = form.first_name.value + ' ' + form.last_name.value +  '\n' + form.message.value
 
 	WeDeploy
-		.url('http://contact.lundyweddings.wedeploy.io/emails')
+		.url('contact.'+DOMAIN+'/emails')
 		.auth('7185a457-618a-48c4-8e03-793e8dd41e21')
 		.form('from',  form.from.value)
 		.form('to', 'jelundy@me.com')
