@@ -27,16 +27,12 @@
 				<div class='description'>
 					<form class="contact-form">
 						<div class="email">
-							<label>
-								Email <br>
-							</label>
-							<input id="email" type="text" name="email">
+							<label for="to">Email <br></label>
+							<input id="email" name="to" type="email" name="email" placeholder="radclient@email.com">
 						</div>
 						<div>
 							<div class="name">
-								<label>
-									Name <br>
-								</label>
+								<label>	Name <br></label>
 								<input id="name" type="text" name="name"><br>
 									FIRST <br>
 							</div>
@@ -47,9 +43,7 @@
 						</div>
 						<div>
 							<div>
-								<label>
-									Wedding Day<br>
-								</label>
+								<label>	Wedding Day<br></label>
 							<div class="date">
 								<input type="text" name="month" size="2" maxlength="2"><br>
 									MM <br>
@@ -64,14 +58,13 @@
 							</div>
 						</div>
 						<div class="content">
-							<label>
-								Tell us all about you and what we can do for you!<br>
-							</label>
-								<textarea id="content" type="text-area" name="content"></textarea>
+							<label for="message"> Tell us all about you and what we can do for you!<br></label>
+								<textarea id="content" name="mesage" type="text-area" name="content" placeholder="Please include full name of your fiance as well."></textarea>
 						</div>
 						<div class="submit">
-							<button type="button" onclick="alert('Thanks! We will ge back to you quickly!')">Submit!</button>
+							<button type="button">Submit!</button>
 						</div>
+						<script src="http://cdn.wedeploy.com/api/latest/wedeploy.js"></script>
 					</form>
 				</div>
 			</div>
