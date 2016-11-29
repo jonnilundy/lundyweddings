@@ -409,7 +409,7 @@ footer p {
 
 					/*-- Media Queries --*/
 
-@media screen and (min-device-width: 425px), (min-width: 425px) {
+@media screen and (min-device-width: 425px), {
 	p {
 		font-size: 16px;
 	}
@@ -455,7 +455,7 @@ footer p {
 	}
 }
 
-@media screen and (min-device-width: 768px), (min-width: 768) {
+@media screen and (min-device-width: 768px), {
 	p {
 		font-size: 14px;
 	}
@@ -513,7 +513,7 @@ footer p {
 	}
 }
 
-@media screen and (min-device-width: 1114px) {
+@media screen and (min-width: 1114px) {
 	.description, .blog-entry {
 		width: 1024px;
 		margin-left: auto;
