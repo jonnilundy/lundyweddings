@@ -3,7 +3,7 @@ var form = document.querySelector('form');
 form.addEventListener('submit', function(e) {
 	e.preventDefault();
 
-	var message = form.name.value + ' ' + form.last_name.value +  '\n' + form.message.value
+	var message = form.first_name.value + ' ' + form.last_name.value +  '\n' + form.message.value
 
 	WeDeploy
 		.url('http://contact.lundyweddings.wedeploy.io/emails')
