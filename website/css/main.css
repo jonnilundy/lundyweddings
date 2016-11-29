@@ -243,6 +243,7 @@ form {
 label {
 	font-size: 1.300em;
 	font-weight: 300;
+	display: block;
 }
 
 .email, .name, .date, .content {
@@ -258,7 +259,6 @@ input {
 	margin-bottom: 5px;
 	margin-top: 5px;
 	border: .1em solid #ccc;
-	width: 10em;
 }
 
 .date input {
@@ -278,7 +278,7 @@ textarea {
 button {
 	background-color: white;
 	color: #333;
-	padding: 15px;
+	padding: 15px 30px 15px 30px;
 	font-size: 1.300em;
 	font-weight: 300;
 	border: .05em solid #999;
