@@ -3,18 +3,21 @@ var form = document.querySelector('form');
 form.addEventListener('submit', function(e) {
 	e.preventDefault();
 
+	var message = form.name.value + ' ' + form.last_name.value +  '\n' + form.message.value
+
 	WeDeploy
 		.url('http://contact.lundyweddings.wedeploy.io/emails')
-		.form('from', 'hello@lundyweddings.com')
-		.form('to', form.to.value)
+		.form('from',  form.from.value)
+		.form('to', 'hello@lundyweddings.com')
 		.form('subject', "Hey There!")
-		.form('message', form.message.value)
+		.form('message', message )
 		.post()
 		.then(function(response) {
+			console.log(response);
 			if (response.succeeded()) {
 				form.reset();
 
-				alert('Yay! Thanks for reaching out. We will get back to you shortly!);
+				alert('Yay! Thanks for reaching out. We will get back to you shortly!');
 
 				console.info('Email ID:', response.body());
 			}
