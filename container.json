@@ -1,4 +1,6 @@
 {
-	"id": "hosting",
-	"type": "wedeploy/hosting"
+	"id": "lundyweddings",
+	"name": "Lundy Weddings",
+	"type": "wedeploy/hosting",
+	"customDomains": ["www.lundyweddings.com"]
 }
