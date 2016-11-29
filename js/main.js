@@ -9,7 +9,7 @@ form.addEventListener('submit', function(e) {
 		.url('http://contact.lundyweddings.wedeploy.io/emails')
 		.auth('7185a457-618a-48c4-8e03-793e8dd41e21')
 		.form('from',  form.from.value)
-		.form('to', 'hello@lundyweddings.com')
+		.form('to', 'jelundy@me.com')
 		.form('subject', "Hey There!")
 		.form('message', message )
 		.post()
