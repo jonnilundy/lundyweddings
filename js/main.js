@@ -5,10 +5,9 @@ form.addEventListener('submit', function(e) {
 
 	WeDeploy
 		.url('http://contact.lundyweddings.wedeploy.io/emails')
-		.auth('49488085-1ee3-4c33-888f-0a1e37d2694e')
 		.form('from', 'hello@lundyweddings.com')
 		.form('to', form.to.value)
-		.form('subject', form.message.value)
+		.form('subject', "Hey There!")
 		.form('message', form.message.value)
 		.post()
 		.then(function(response) {
