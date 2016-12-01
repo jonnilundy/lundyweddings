@@ -293,6 +293,25 @@ button {
 	color: white;
 }
 
+					/*-- Investment Calculator --*/
+#investment-total-container {
+	border-left: 1px solid black;
+}
+
+#investment-total-title, #investment-total-value {
+	font-weight: 300;
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+#investment-total-value:before {
+	content: '$';
+}
+
+#investment-total-value {
+	transition-duration: 2s;
+}
+
 
 					/*-- BLOG --*/
 .blog-entry {
