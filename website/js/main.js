@@ -27,8 +27,8 @@ form.addEventListener('submit', function(e) {
 
 
 
-	var message = "<b>Name: </b>" + "<br/>" + form.first_name.value + ' ' + form.last_name.value + '<br/>' + "<b>Message: </b>" + 
-	form.message.value + "<br/>" + weddingPlannerAlert + "<br/>" + weddingBudgetAlert + "<br/>" + form.message.value;
+	var message = "<b>Name: </b>" + "<br/>" + form.first_name.value + ' ' + form.last_name.value + '<br/>' + '<br/>' + "<b>Message: </b>" + 
+	"<br/>" + "<br/>" + form.message.value + "<br/>" + '<br/>' + '<br/>' + "<b>Compatibility: </b>" + '<br/>' + weddingPlannerAlert + "<br/>" + '<br/>' + weddingBudgetAlert;
 	console.log(message)
 	WeDeploy
 		.url('contact.'+DOMAIN+'/emails')
