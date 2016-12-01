@@ -18,18 +18,18 @@ form.addEventListener('submit', function(e) {
 
 	// Wedding Budget
 	var weddingBudgetAlert;
-	var numEntry = document.getElementById("total_budget");
-
+	var numEntry = document.getElementById("total_budget").value;
+	console.log(numEntry)
 	if(numEntry >= 10000) {
-		weddingBudgetAlert = "Great! They have" + form.total_budget.value + " in their wedding bugdet.";
+		weddingBudgetAlert = "Great! They have " + form.total_budget.value + " in their wedding bugdet.";
 	} else {
-		weddingBugdetAlert = "WARNING! They only have " + form.total_budget.value + " in their wedding budget!";
+		weddingBudgetAlert = "WARNING! They only have " + form.total_budget.value + " in their wedding budget!";
 	}
 
 
 
 	var message = form.first_name.value + ' ' + form.last_name.value +  '\n' + weddingPlannerAlert + "\n" + weddingBudgetAlert + "\n" + form.message.value;
-
+	console.log(message)
 	WeDeploy
 		.url('contact.'+DOMAIN+'/emails')
 		.auth('7185a457-618a-48c4-8e03-793e8dd41e21')
