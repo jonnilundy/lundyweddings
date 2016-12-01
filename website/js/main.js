@@ -11,9 +11,9 @@ form.addEventListener('submit', function(e) {
 	var checkbox = document.getElementById("wedding_planner");
 
 	if(checkbox.checked == true) {
-		weddingPlannerAlert = "Great! They are working with a wedding planner. \n";
+		weddingPlannerAlert = "Great! They are working with a wedding planner.";
 	} else {
-		weddingPlannerAlert = "WARNING! They are NOT working with a wedding planner. \n";
+		weddingPlannerAlert = "WARNING! They are NOT working with a wedding planner.";
 	}
 
 	// Wedding Budget
@@ -21,9 +21,9 @@ form.addEventListener('submit', function(e) {
 	var numEntry = document.getElementById("total_budget").value;
 	console.log(numEntry)
 	if(numEntry >= 10000) {
-		weddingBudgetAlert = "Great! They have " + form.total_budget.value + " in their wedding bugdet. \n";
+		weddingBudgetAlert = "Great! They have " + form.total_budget.value + " in their wedding bugdet.";
 	} else {
-		weddingBudgetAlert = "WARNING! They only have " + form.total_budget.value + " in their wedding budget! \n";
+		weddingBudgetAlert = "WARNING! They only have " + form.total_budget.value + " in their wedding budget!";
 	}
 
 
