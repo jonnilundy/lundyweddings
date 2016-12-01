@@ -5,7 +5,30 @@ var DOMAIN = window.location.hostname.split(".").slice(-3).join(".");
 form.addEventListener('submit', function(e) {
 	e.preventDefault();
 
-	var message = form.first_name.value + ' ' + form.last_name.value +  '\n' + form.message.value
+	
+	// Wedding Planner
+	var weddingPlannerAlert;
+	var checkbox = document.getElementById("wedding_planner");
+
+	if(checkbox.checked == true) {
+		weddingPlannerAlert = "Great! They are working with a wedding planner";
+	} else {
+		weddingPlannerAlert = "WARNING! They are NOT working with a wedding planner";
+	}
+
+	// Wedding Budget
+	var weddingBudgetAlert;
+	var numEntry = document.getElementById("total_budget");
+
+	if(numEntry >= 10000) {
+		weddingBudgetAlert = "Great! They have" + form.total_budget.value + " in their wedding bugdet.";
+	} else {
+		weddingBugdetAlert = "WARNING! They only have " + form.total_budget.value + " in their wedding budget!";
+	}
+
+
+
+	var message = form.first_name.value + ' ' + form.last_name.value +  '\n' + weddingPlannerAlert + "\n" + weddingBudgetAlert + "\n" + form.message.value;
 
 	WeDeploy
 		.url('contact.'+DOMAIN+'/emails')
@@ -28,8 +51,9 @@ form.addEventListener('submit', function(e) {
 				alert('Email was not sent');
 			}
 		})
+
 		.catch(function(error) {
-			alert('Ops, some error has happened.');
+			alert('Oops, some error has happened.');
 		});
 });
 
@@ -88,3 +112,4 @@ function updateTotalValue() {
 	var total = totalLength + totalLocation + totalEngagementSession;
 	totalDiv.innerHTML = total;
 }
+
