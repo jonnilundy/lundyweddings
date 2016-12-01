@@ -32,3 +32,59 @@ form.addEventListener('submit', function(e) {
 			alert('Ops, some error has happened.');
 		});
 });
+
+// INVESTMENT FORM //
+
+var totalLength = 0;
+var totalLocation = 0;
+var totalEngagementSession = 0;
+
+function calculateLength() {
+	var select = document.getElementById("length");
+	var selectValue = select.options[select.selectedIndex].value;
+	var weddingLength = new Array();
+		weddingLength["0"] = 0;
+		weddingLength["4"] = 400;
+		weddingLength["6"] = 600;
+		weddingLength["8"] = 800;
+
+	totalLength = weddingLength[selectValue];
+
+	updateTotalValue();
+
+}
+
+function calculateLocation() {
+	var select = document.getElementById("location");
+	var selectValue = select.options[select.selectedIndex].value;
+	var weddingLocation = new Array();
+		weddingLocation["none"] = 0;
+		weddingLocation["orangecounty"] = 0;
+		weddingLocation["santaclarita"] = 50;
+		weddingLocation["portland"] = 350;
+
+	totalLocation = weddingLocation[selectValue];
+
+	updateTotalValue();
+}
+
+function calculateEngagementSession() {
+
+	var checkbox = document.getElementById("engagementsession");
+
+	if (checkbox.checked == true) {
+		totalEngagementSession = 500;
+	} else {
+		totalEngagementSession = 0;
+	}
+
+	updateTotalValue();
+}
+
+
+// Print the total
+function updateTotalValue() {
+	var totalDiv = document.querySelector(".total-investment");
+	var total = totalLength + totalLocation + totalEngagementSession;
+	totalDiv.innerHTML = total;
+}
