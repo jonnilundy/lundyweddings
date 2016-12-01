@@ -19,7 +19,6 @@ form.addEventListener('submit', function(e) {
 	// Wedding Budget
 	var weddingBudgetAlert;
 	var numEntry = document.getElementById("total_budget").value;
-	console.log(numEntry)
 	if(numEntry >= 10000) {
 		weddingBudgetAlert = "Great! They have " + form.total_budget.value + " in their wedding bugdet.";
 	} else {
@@ -28,7 +27,7 @@ form.addEventListener('submit', function(e) {
 
 
 
-	var message = form.first_name.value + ' ' + form.last_name.value +  '\n' + weddingPlannerAlert + "\n" + weddingBudgetAlert + "\n" + form.message.value;
+	var message = form.first_name.value + ' ' + form.last_name.value +  '<br/>' + weddingPlannerAlert + "<br/>" + weddingBudgetAlert + "<br/>" + form.message.value;
 	console.log(message)
 	WeDeploy
 		.url('contact.'+DOMAIN+'/emails')
