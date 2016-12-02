@@ -57,6 +57,22 @@ form.addEventListener('submit', function(e) {
 		});
 });
 
+// TESTS
+
+$(document).ready(function() {
+	$("#hide").click(function() {
+		$(".banner-learn-more").hide();
+	});
+	$("show").click(function() {
+		$(".banner-learn-more").show();
+		console.log();
+	});
+
+
+});
+
+
+
 // INVESTMENT FORM //
 
 var totalLength = 0;

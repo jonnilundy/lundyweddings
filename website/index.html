@@ -6,6 +6,10 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,500,700,900" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="http://cdn.wedeploy.com/api/latest/wedeploy.js"></script>
+		<!-- <script src="js/main.js"></script> -->
+		<script src="js/main-page.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 		<body>
 			<div class="head">
@@ -28,7 +32,7 @@
 					</div>
 					<div class='description'>
 						<div class="description-head">What are we about?</div>
-						<p style="font-style: italic;">"Photography is an art of observation. It's about finding something interesting in an ordinary place... I've found it has little to do with the things you see and everything to do with the way you see them." -Elliot Erwitt</p>
+						<p class="dissapear" style="font-style: italic;">"Photography is an art of observation. It's about finding something interesting in an ordinary place... I've found it has little to do with the things you see and everything to do with the way you see them." -Elliot Erwitt</p>
 						<p>This resonates with us! We believe that our success is not found in the perfection, but rather in making much of the things that are most important to our clients.</p>
 
 					</div>
@@ -77,18 +81,15 @@
 				</div>
 				<div class=''>
 					<div class="banner">
-						<div class="banner-head">Learn More</div>
+						<div class="banner-head banner-learn-more">Learn More</div>
 						<div class='learn-more-nav'>
-							<button type="button" href="weddings.html">WEDDINGS</button>
-							<button type="button" href="contact.html">CONTACT</button>
-							<button type="button" href="blog.html">BLOG</button>
+							<button id="hide" onclick="testhide()" type="button" href="weddings.html">WEDDINGS</button>
+							<button id="show" onclick="testshow()" type="button" href="contact.html">CONTACT</button>
+							<button class="button" type="button" href="blog.html">BLOG</button>
 						</div>
 					</div>
 				</div>
 			</div>
-			<script src="http://cdn.wedeploy.com/api/latest/wedeploy.js"></script>
-			<script src="js/main.js"></script>
-			<script src="js/jquery-3.1.1.min.js"></script>
 		</body>
 		<footer>
 			<p>All pictures are copyright of Jonni Lundy Studios. Please don't steel my pictures or I'll hunt you down. well maybe not. or maybe.</p>
