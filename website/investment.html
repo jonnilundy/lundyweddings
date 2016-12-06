@@ -8,63 +8,66 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 		<body>
-			<div class="head">
-				<div class='header-bar'>
-					<a class="header" href="index.html">JONNI LUNDY STUDIOS</a>
-					<ul class='header-nav'>
-						<li class="nav-item"><a href="weddings.html">Weddings</a></li>
-						<!--<li class="nav-item"><a href="about.html">About</a></li>-->
-						<li class="nav-item"><a href="blog.html">Blog</a></li>
-						<li class="nav-item"><a href="investment.html">Investment</a></li>
-						<li class="nav-item"><a href="contact.html">Contact</a></li>
-					</ul>
+			<div id="header">
+				<div class="head">
+					<div class='header-bar'>
+						<a class="header" href="index.html">JONNI LUNDY STUDIOS</a>
+						<ul class='header-nav'>
+							<li class="nav-item"><a href="weddings.html">Weddings</a></li>
+							<!--<li class="nav-item"><a href="about.html">About</a></li>-->
+							<li class="nav-item"><a href="blog.html">Blog</a></li>
+							<li class="nav-item"><a href="investment.html">Investment</a></li>
+							<li class="nav-item"><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class=''>
+			<div id="content">
 				<div class=''>
-					<div class='banner' class="parallax-window" data-parallax="scroll" data-image-src="../img/mainbanner4.jpg">>
-						<div class="banner-head" >Investment</div>
-						<div class="banner-desc">How much is the biggest day of your life worth?</div>	
-					</div>
-					<div class='description row'>
-						<div class="description-head">Package Estimate Calculator</div>
-						<br>
-						<form action="" id="investment-form">
-							<fieldset class="col-md-6">
-								<div class="form-group">
-									<label for="length">How long would you like us there?</label>
-									<select id="length" name="length" onchange="calculateLength()">
-										<option value="0">Select One</option>
-										<option value="4">4 Hrs</option>
-										<option value="6">6 Hrs</option>
-										<option value="8">8 Hrs</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<label for="location">Where will it be located?</label>
-									<select id="location" name="location" onchange="calculateLocation()">
-										<option value="none">-</option>
-										<option value="orangecounty">Orange County</option>
-										<option value="santaclarita">Santa Clarita</option>
-										<option value="portland">Portland, OR</option>
-									</select>
-								</div>
-								<div>
-									<label for="engagement-session" class="inlinelabel">Would you like an engagement session?</label>
-									<input type="checkbox" id="engagementsession" name="engagementsession" onclick="calculateEngagementSession()">
-								</div>
-							</fieldset>
+					<div class=''>
+						<div class='banner' class="parallax-window" data-parallax="scroll" data-image-src="../img/mainbanner4.jpg">>
+							<div class="banner-head" >Investment</div>
+							<div class="banner-desc">How much is the biggest day of your life worth?</div>	
+						</div>
+						<div class='description row'>
+							<div class="description-head">Package Estimate Calculator</div>
 							<br>
-							<div class="col-md-6" id="investment-total-container">	
-								<p id="investment-total-title">Estimate Total:</p>
-								<p class="total-investment" id="investment-total-value">0</p>
-							</div>
-						</form>
+							<form action="" id="investment-form">
+								<fieldset class="col-md-6">
+									<div class="form-group">
+										<label for="length">How long would you like us there?</label>
+										<select id="length" name="length" onchange="calculateLength()">
+											<option value="0">Select One</option>
+											<option value="4">4 Hrs</option>
+											<option value="6">6 Hrs</option>
+											<option value="8">8 Hrs</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="location">Where will it be located?</label>
+										<select id="location" name="location" onchange="calculateLocation()">
+											<option value="none">-</option>
+											<option value="orangecounty">Orange County</option>
+											<option value="santaclarita">Santa Clarita</option>
+											<option value="portland">Portland, OR</option>
+										</select>
+									</div>
+									<div>
+										<label for="engagement-session" class="inlinelabel">Would you like an engagement session?</label>
+										<input type="checkbox" id="engagementsession" name="engagementsession" onclick="calculateEngagementSession()">
+									</div>
+								</fieldset>
+								<br>
+								<div class="col-md-6" id="investment-total-container">	
+									<p id="investment-total-title">Estimate Total:</p>
+									<p class="total-investment" id="investment-total-value">0</p>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			<script src="http://cdn.wedeploy.com/api/latest/wedeploy.js"></script>
 			<script src="js/main.js"></script>
-			<script src="js/jquery-3.1.1.min.js"></script>
 		</body>
 		<footer>
 			<p>All pictures are copyright of Jonni Lundy Studios. Please don't steel my pictures or I'll hunt you down. well maybe not. or maybe.</p>
